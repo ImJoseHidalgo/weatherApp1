@@ -1,13 +1,85 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  color: #fff;
+}
+.app {
+  background-image: url("https://specials-images.forbesimg.com/imageserve/1037404548/960x0.jpg?fit=scale");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
+}
+.app.warm {
+  background-image: url("https://www.abc.net.au/cm/rimage/11682954-3x4-xlarge.jpg?v=2");
+}
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 2.5rem;
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 7.5rem;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 1.6rem 1.6rem;
+  margin-top: -2.5rem;
+  box-shadow: 0 0.5rem rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 2rem;
+  transition: 0.4s;
+}
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location-box .location {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.6rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 10.2rem;
+  font-weight: 900;
+  text-shadow: 0.3rem 0.6rem rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+.weather-box .weather {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-shadow: 0.3rem 0.3rem rgba(50, 50, 70, 0.5);
 }
